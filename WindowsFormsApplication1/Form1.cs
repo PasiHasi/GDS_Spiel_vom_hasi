@@ -34,8 +34,10 @@ namespace WindowsFormsApplication1
         {
             if(left)
                 pictureBox1.Location = new Point(pictureBox1.Location.X - 2, pictureBox1.Location.Y);
+
             if(right)
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 2, pictureBox1.Location.Y);
+
             if (space && schusszaehler <= 0)
             {
                 schussHinzufuegen();
@@ -84,8 +86,10 @@ namespace WindowsFormsApplication1
         {
             if(e.KeyCode == Keys.Left)
                 left = false;
+
             if (e.KeyCode == Keys.Right)
                 right = false;
+
             if (e.KeyCode == Keys.Space)
                 space = false;
         }
