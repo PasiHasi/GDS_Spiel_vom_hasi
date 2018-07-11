@@ -13,6 +13,7 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         private bool left;
+
         private bool right;
         private bool space;
         private int schusszaehler;
@@ -89,5 +90,6 @@ namespace WindowsFormsApplication1
             if (e.KeyCode == Keys.Space)
                 space = false;
         }
+        
     }
 }
